@@ -26,3 +26,15 @@ A simple web-based tool to calculate Body Mass Index (BMI) based on user input.
 2. Choose between Metric or Imperial units.
 3. Click *Calculate*.
 4. View your BMI score, category, and health advice.
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 📌 Project Goal
+
+To provide an easy-to-use, visually appealing BMI calculator that not only gives results but also promotes awareness and healthier lifestyle decisions.
+
+---
