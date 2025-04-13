@@ -26,9 +26,8 @@
     </style>
 </head>
 
+
 <body>
-
-
     <div class="container my-5">
         <div class="bmi-wrapper">
             <!-- Input Section -->
@@ -49,8 +48,6 @@
                     </div>
                 </div>
 
-
-
                 <form id="bmi-form">
                     <div class="mb-3">
                         <label for="weight-unit" class="form-label">Units</label>
@@ -59,23 +56,38 @@
                             <option value="lbs">lbs/inches</option>
                         </select>
                     </div>
+                    <!-- 🔴 Error 3: Forgetting name attribute in form inputs -->
+                    <!-- ❌ Fix: Add name="weight" and name="height" to input fields -->
+                    <!-- Example: <input type="number" id="weight" name="weight" /> -->
+
                     <div class="mb-3">
-                        <label for="age" class="form-label">Age</label>
+                        <!-- 🔴 Error 4: Using placeholder instead of label for important input info -->
+                        <!-- ❌ Fix: Add proper <label for="age">Age</label> before input -->
+                        <!-- Placeholder disappears when user starts typing -->
+
+                        <!-- just comment out the line below and dont use your extra brain(raghav) to think about the error  -->
+
+                        <!-- <label for="age" class="form-label">Age</label> -->
                         <input type="number" class="form-control" placeholder="Enter your age" id="age" required>
                     </div>
                     <div class="mb-3">
-                        <label for="weight" class="form-label">Weight</label>
+                        <label for="weight" class="form-label"></label>
                         <input type="number" class="form-control" placeholder="Enter your weight" id="weight" required>
                     </div>
                     <div class="mb-3">
-                        <label for="height" class="form-label">Height</label>
+                        <label for="height" class="form-label"></label>
                         <input type="number" class="form-control" placeholder="Enter your height" id="height" required>
                     </div>
-                    <button type="button" onclick="calculateBMI()" class="btn btn-primary w-100">Calculate BMI</button>
+
+                    <!-- 🔴 Error 2: Button has type="button" instead of type="submit" -->
+                    <!-- ❌ Fix: Replace type="button" with type="submit" so form submits properly -->
+                    <!-- <button type="submit">Calculate BMI</button> ✅ -->
+
+                    <button type="submit" onclick="calculateBMI()" class="btn btn-primary w-100">Calculate BMI</button>
                 </form>
-            </div>
 
 
+            <!-- </div> -->
 
 
             <!-- BMI Result Section -->
@@ -87,26 +99,25 @@
                 </h4>
                 <div class="bmi-result-container">
                     <p class="display-result">Your BMI is: <span id="bmiValue"></span></p>
-                    <progress id="bmiProgress" value="0" max="100"></progress>
-                </div>
+                    <!-- 🔴 Error 5: Using progress bar with max=100 but BMI can be >100 -->
+                    <!-- ❌ Fix: Use realistic max like max="50" or calculate dynamically -->
+                    <!-- <progress value="bmiValue" max="100"></progress> ✅ -->
 
-            </div>
+                    <progress id="bmiProgress" value="0" max="50"></progress>
+                </div>
+<!-- error 6 forgot to  close the div tag -->>
+            <!-- </div> -->
             <br>
 
 
-
-
-            <!-- BMI Meaning Card Container -->
+            <!-- what you bmi means -->
             <div class="card p-4 mb-4">
 
                 <div id="bmimeans-section" class="mt-2" style="display:none;">
                     <h3 class="text-center">What your BMI score means</h3>
                     <div id="bmi-means" class="alert alert-info mt-3"></div>
                 </div>
-
             </div>
-
-
 
 
             <!-- Lifestyle Routines Section -->
@@ -116,6 +127,7 @@
                     <div id="routine-description" class="alert alert-info mt-3"></div>
                 </div>
             </div>
+
 
             <!-- BMI Chart -->
             <div class="card p-4 mb-4">
@@ -160,30 +172,35 @@
                 </table>
             </div>
 
+
             <!-- Introduction Section -->
             <section id="bmi-introduction" class="card p-4 mb-4 rounded-2xl bg-white">
-                <h2 class="text-2xl font-semibold text-center text-blue-800 mb-4">Introduction to the Body Mass Index (BMI)</h2>
+                <h2 class="text-2xl font-semibold text-center text-blue-800 mb-4">Introduction to the Body Mass Index
+                    (BMI)</h2>
                 <p class="text-gray-700 leading-relaxed mb-3">
-                    The Body Mass Index (BMI) is a simple and widely-used tool for estimating body fat based on your weight and height. 
+                    The Body Mass Index (BMI) is a simple and widely-used tool for estimating body fat based on your
+                    weight and height.
                     It provides a quick snapshot of whether your weight falls within a healthy range for your height.
                 </p>
                 <p class="text-gray-700 leading-relaxed mb-3">
-                    Merely checking your weight isn't always helpful—taller individuals naturally weigh more but may still be 
-                    perfectly healthy. BMI helps adjust for height, offering a more accurate perspective on your overall health.
+                    Merely checking your weight isn't always helpful—taller individuals naturally weigh more but may
+                    still be
+                    perfectly healthy. BMI helps adjust for height, offering a more accurate perspective on your overall
+                    health.
                 </p>
                 <p class="text-gray-700 leading-relaxed mb-3">
-                    While BMI isn’t a perfect indicator of body fat or fitness, it's a helpful screening tool for identifying 
-                    potential health risks associated with being underweight or overweight. Healthcare providers often use it 
+                    While BMI isn’t a perfect indicator of body fat or fitness, it's a helpful screening tool for
+                    identifying
+                    potential health risks associated with being underweight or overweight. Healthcare providers often
+                    use it
                     to assess patients' health status and determine appropriate medication dosages.
-                </p>                                
+                </p>
                 <p class="text-sm text-gray-500 italic text-center mt-4">
-                    Note: BMI is a general guide and may not apply equally to all body types, such as athletes or individuals with high muscle mass.
-                </p>                
+                    Note: BMI is a general guide and may not apply equally to all body types, such as athletes or
+                    individuals with high muscle mass.
+                </p>
             </section>
 
-            
-
-            
             <!-- Benefits Section -->
             <div class="benefits">
                 <h2>
@@ -210,8 +227,6 @@
             </div>
 
 
-
-
             <!-- How to Calculate BMI Section -->
             <div class="card p-4 mb-4">
                 <h2 class="text-center">How to Calculate BMI</h2>
@@ -223,12 +238,14 @@
                     <h5>International System of Units (SI)</h5>
                     <p>BMI = weight (kg) ÷ (height (m))²</p>
                     <h5>Imperial System</h5>
-                    <p>BMI = weight (lb) ÷ (height (inches))² × 703</p>
+                    <!-- 🔴 Error 1: Wrong BMI formula used in Imperial system -->
+                    <!-- ❌ Fix: Multiply result by 703 in Imperial formula -->
+                    <!-- BMI = weight (lb) / (height (in)^2) ❌ Wrong -->
+                    <!-- BMI = weight (lb) / (height (in)^2) * 703 ✅ Correct -->
+
+                    <p>BMI = weight (lb) ÷ (height (inches))²</p>
                 </div>
             </div>
-
-
-
 
             <!-- Go to Top Button -->
             <div class="text-center">
@@ -236,12 +253,13 @@
                     Click here to know your Body Mass Index (BMI)
                 </a>
             </div>
-
         </div>
     </div>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+    <!-- Error 7- linked javascript file just comment out below line -->
+    <!-- <script src="main.js"></script> -->
 </body>
 
 </html>
