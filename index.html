@@ -61,7 +61,13 @@
                     <!-- Example: <input type="number" id="weight" name="weight" /> -->
 
                     <div class="mb-3">
-                        <label for="age" class="form-label">Age</label>
+                        <!-- 🔴 Error 9: Using placeholder instead of label for important input info -->
+                        <!-- ❌ Fix: Add proper <label for="age">Age</label> before input -->
+                        <!-- Placeholder disappears when user starts typing -->
+
+                        <!-- just comment out the line below and dont use your extra brain(raghav) to think about the error  -->
+
+                        <!-- <label for="age" class="form-label">Age</label> -->
                         <input type="number" class="form-control" placeholder="Enter your age" id="age" required>
                     </div>
                     <div class="mb-3">
