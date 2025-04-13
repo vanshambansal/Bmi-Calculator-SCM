@@ -56,19 +56,28 @@
                             <option value="lbs">lbs/inches</option>
                         </select>
                     </div>
+                    <!-- 🔴 Error 3: Forgetting name attribute in form inputs -->
+                    <!-- ❌ Fix: Add name="weight" and name="height" to input fields -->
+                    <!-- Example: <input type="number" id="weight" name="weight" /> -->
+
                     <div class="mb-3">
                         <label for="age" class="form-label">Age</label>
                         <input type="number" class="form-control" placeholder="Enter your age" id="age" required>
                     </div>
                     <div class="mb-3">
-                        <label for="weight" class="form-label">Weight</label>
+                        <label for="weight" class="form-label"></label>
                         <input type="number" class="form-control" placeholder="Enter your weight" id="weight" required>
                     </div>
                     <div class="mb-3">
-                        <label for="height" class="form-label">Height</label>
+                        <label for="height" class="form-label"></label>
                         <input type="number" class="form-control" placeholder="Enter your height" id="height" required>
                     </div>
-                    <button type="button" onclick="calculateBMI()" class="btn btn-primary w-100">Calculate BMI</button>
+
+                    <!-- 🔴 Error 2: Button has type="button" instead of type="submit" -->
+                    <!-- ❌ Fix: Replace type="button" with type="submit" so form submits properly -->
+                    <!-- <button type="submit">Calculate BMI</button> ✅ -->
+
+                    <button type="submit" onclick="calculateBMI()" class="btn btn-primary w-100">Calculate BMI</button>
                 </form>
             </div>
 
