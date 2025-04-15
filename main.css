@@ -2,4 +2,12 @@
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    border-radius: 10px;   
+    border-radius: 10px; 
+    background-color: #D9CBAE; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.bmi-wrapper:hover {
+    transform: scale(1.02);
+}  
