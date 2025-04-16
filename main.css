@@ -35,3 +35,10 @@ body {
     border-radius: 50%;
     border: 3px solid #C45A3D;
 }
+
+.bmi-chart table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
