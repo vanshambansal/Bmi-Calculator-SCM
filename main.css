@@ -47,3 +47,12 @@ body {
     border: 1px solid #ddd; 
     padding: 8px; 
 }
+
+.alert-custom {
+    background-color: #A8BBA1; 
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: #4E3B31; 
+}
