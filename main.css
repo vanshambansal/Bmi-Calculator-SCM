@@ -70,3 +70,10 @@ body {
 .go-to-top:hover {
     background-color: #4E3B31; 
 }
+
+.benefits-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
