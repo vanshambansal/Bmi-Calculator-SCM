@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,10 +13,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.0/ScrollToPlugin.min.js"></script>
 </head>
 
-
 <body>
     <div class="container my-5">
         <div class="bmi-wrapper">
+
             <!-- Input Section -->
             <div class="text-center">
                 <h2 class="display-6">BMI Calculator</h2>
@@ -33,7 +34,6 @@
                         <p>Female</p>
                     </div>
                 </div>
-
                 <form id="bmi-form">
                     <div class="mb-3">
                         <label for="weight-unit" class="form-label">Units</label>
@@ -42,61 +42,64 @@
                             <option value="lbs">lbs/inches</option>
                         </select>
                     </div>
-
                     <div class="mb-3">
-                       
-
                         <label for="age" class="form-label">Age</label>
                         <input type="number" class="form-control" placeholder="Enter your age" id="age" required>
                     </div>
                     <div class="mb-3">
-                        <label for="weight" class="form-label"></label>
-                        <input type="number" class="form-control" placeholder="Enter your weight" id="weight" name = "weight" required>
+                        <label for="weight" class="form-label">Weight</label>
+                        <input type="number" step = "any" class="form-control" placeholder="Enter your weight" id="weight" required>
                     </div>
                     <div class="mb-3">
-                        <label for="height" class="form-label"></label>
-                        <input type="number" class="form-control" placeholder="Enter your height" id="height" name="height" required>
+                        <label for="height" class="form-label">Height</label>
+                        <input type="number" step = "any" class="form-control" placeholder="Enter your height" id="height" required>
                     </div>
-
-                    <button type="submit" onclick="calculateBMI()" class="btn btn-primary w-100">Calculate BMI</button>
+                    <button type="submit" class="btn btn-primary w-100">Calculate BMI</button>
                 </form>
-
-
-            <!-- </div> -->
-
-
-            <!-- BMI Result Section -->
-            <div id="result-section" class="bmi-result text-center my-5" style="display:none;">
-                <h3>Your BMI Result</h3>
-                <div id="display-result" class="display-result mb-4"></div>
-                <h4>
-                    <p id="bmi-meaning" class="fw-bold"></p>
-                </h4>
-                <div class="bmi-result-container">
-                    <p class="display-result">Your BMI is: <span id="bmiValue"></span></p>
-                    <progress id="bmiProgress" value="0" max="100"></progress>
-                </div>
             </div>
             <br>
 
 
-            <!-- what you bmi means -->
-            <div class="card p-4 mb-4">
 
-                <div id="bmimeans-section" class="mt-2" style="display:none;">
+
+            <!-- BMI Result Section -->
+            <div id="result-section" class="card bmi-result text-center mb-4" style="display:none;">
+                <div class="card-body">
+                    <h3 class="card-title">Your BMI Result</h3>
+                    <div id="display-result" class="display-result mb-4"></div>
+                    <h4>
+                        <p id="bmi-meaning" class="fw-bold"></p>
+                    </h4>
+                    <div class="bmi-result-container">
+                        <p class="display-result">Your BMI is: <span id="bmiValue"></span></p>
+                        <progress id="bmiProgress" value="0" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- what you bmi means -->
+            <div class="card p-4 mb-4" id = "bmi-meaning-card" style="display:none;">
+                <div id="bmimeans-section" class="mt-2">
                     <h3 class="text-center">What your BMI score means</h3>
                     <div id="bmi-means" class="alert alert-info mt-3"></div>
                 </div>
             </div>
 
 
+
+
             <!-- Lifestyle Routines Section -->
-            <div class="card p-4 mb-4">
-                <div id="routine-section" class="mt-2" style="display:none;">
+            <div class="card p-4 mb-4" id = "routine-card" style="display:none;">
+                <div id="routine-section" class="mt-2">
                     <h3 class="text-center">Lifestyle Routines Based on Your BMI</h3>
                     <div id="routine-description" class="alert alert-info mt-3"></div>
                 </div>
             </div>
+
+
 
 
             <!-- BMI Chart -->
@@ -143,36 +146,41 @@
             </div>
 
 
+
+
             <!-- Introduction Section -->
-            <section id="bmi-introduction" class="card p-4 mb-4 rounded-2xl bg-white">
-                <h2 class="text-2xl font-semibold text-center text-blue-800 mb-4">Introduction to the Body Mass Index
+            <div class="card p-4 mb-4">
+                <h2 class="text-center mb-4">Introduction to the Body Mass Index
                     (BMI)</h2>
-                <p class="text-gray-700 leading-relaxed mb-3">
+                <p>
                     The Body Mass Index (BMI) is a simple and widely-used tool for estimating body fat based on your
                     weight and height.
                     It provides a quick snapshot of whether your weight falls within a healthy range for your height.
                 </p>
-                <p class="text-gray-700 leading-relaxed mb-3">
+                <p>
                     Merely checking your weight isn't always helpful—taller individuals naturally weigh more but may
                     still be
                     perfectly healthy. BMI helps adjust for height, offering a more accurate perspective on your overall
                     health.
                 </p>
-                <p class="text-gray-700 leading-relaxed mb-3">
+                <p>
                     While BMI isn’t a perfect indicator of body fat or fitness, it's a helpful screening tool for
                     identifying
                     potential health risks associated with being underweight or overweight. Healthcare providers often
                     use it
                     to assess patients' health status and determine appropriate medication dosages.
                 </p>
-                <p class="text-sm text-gray-500 italic text-center mt-4">
+                <p>
                     Note: BMI is a general guide and may not apply equally to all body types, such as athletes or
                     individuals with high muscle mass.
                 </p>
-            </section>
+            </div>
+
+
+
 
             <!-- Benefits Section -->
-            <div class="benefits">
+            <div class="benefits card p-4 mb-4">
                 <h2>
                     <center>Why Use a BMI Calculator ?</center>
                 </h2><br>
@@ -197,6 +205,8 @@
             </div>
 
 
+
+
             <!-- How to Calculate BMI Section -->
             <div class="card p-4 mb-4">
                 <h2 class="text-center">How to Calculate BMI</h2>
@@ -208,9 +218,12 @@
                     <h5>International System of Units (SI)</h5>
                     <p>BMI = weight (kg) ÷ (height (m))²</p>
                     <h5>Imperial System</h5>
-                    <p>BMI = weight (lb) ÷ (height (inches)²) * 703</p>
+                    <p>BMI = weight (lb) ÷ (height (inches))² × 703</p>
                 </div>
             </div>
+
+
+
 
             <!-- Go to Top Button -->
             <div class="text-center">
@@ -218,10 +231,9 @@
                     Click here to know your Body Mass Index (BMI)
                 </a>
             </div>
+            
         </div>
     </div>
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
