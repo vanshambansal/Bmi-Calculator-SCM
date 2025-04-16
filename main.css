@@ -66,3 +66,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.go-to-top:hover {
+    background-color: #4E3B31; 
+}
