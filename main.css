@@ -18,3 +18,13 @@ body {
 .bmi-wrapper:hover {
     transform: scale(1.02);
 }
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.image-item {
+    text-align: center;
+}
