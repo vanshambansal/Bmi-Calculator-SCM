@@ -35,3 +35,24 @@ body {
     border-radius: 50%;
     border: 3px solid #C45A3D;
 }
+
+.bmi-chart table {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.bmi-chart th, .bmi-chart td {
+    border: 1px solid #ddd; 
+    padding: 8px; 
+}
+
+.alert-custom {
+    background-color: #A8BBA1; 
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    color: #4E3B31; 
+}
