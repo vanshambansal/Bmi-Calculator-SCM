@@ -70,3 +70,18 @@ body {
 .go-to-top:hover {
     background-color: #4E3B31; 
 }
+
+.benefits-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.benefit-item {
+    background-color: #c4f2fb; 
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: #087990; 
+}
