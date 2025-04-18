@@ -148,3 +148,18 @@ progress::-webkit-progress-value {
 .bmi-progress-obese {
     background-color: #ff3333;
 }
+
+/* Responsive Styling */
+@media (max-width: 767px) {
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .display-result {
+        font-size: 1.5rem;
+    }
+
+    #bmi-meaning {
+        font-size: 1.2rem;
+    }
+}
