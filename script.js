@@ -39,4 +39,9 @@ document.getElementById("bmi-form").addEventListener("submit", function (e) {
     calculateBMI(); // Now safely call the original function
 });
 
+document.getElementById("bmi-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    calculateBMI();
+    animateResults();
+});
 
