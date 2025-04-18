@@ -1,8 +1,9 @@
+
 gsap.from(".bmi-wrapper", {
     duration: 1.5,
     opacity: 0,
     scale: 0.95,
-    ease: "elastic.out(1, 0.75)",    
+    ease: "elastic.out(1, 0.75)",
 });
 
 document.querySelector("button.btn-primary").addEventListener("mouseenter", (e) => {
@@ -17,11 +18,20 @@ document.querySelector("button.btn-primary").addEventListener("mouseleave", (e) 
     gsap.to(e.target, {
         duration: 0.3,
         scale: 1,
-        boxShadow: "none",
+        boxShadow: "none", // Reset the box-shadow too
     });
 });
 
 gsap.registerPlugin(ScrollToPlugin);
+
+
+document.getElementById("bmi-form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    calculateBMI();
+    animateResults();
+
+
+});
 
 document.getElementById("bmi-form").addEventListener("submit", function (e) {
     e.preventDefault(); // Stop default form submission
@@ -37,11 +47,6 @@ document.getElementById("bmi-form").addEventListener("submit", function (e) {
     }
 
     calculateBMI(); // Now safely call the original function
-});
-
-document.getElementById("bmi-form").addEventListener("submit", (e) => {
-    e.preventDefault();
-    calculateBMI();
-    animateResults();
+    
 });
 
