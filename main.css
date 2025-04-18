@@ -140,3 +140,11 @@ progress::-webkit-progress-value {
 .bmi-progress-normal {
     background-color: #66cc66;
 }
+
+.bmi-progress-overweight {
+    background-color: #ffcc00;
+}
+
+.bmi-progress-obese {
+    background-color: #ff3333;
+}
