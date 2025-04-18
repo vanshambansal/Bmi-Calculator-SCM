@@ -124,3 +124,27 @@ progress {
     margin-top: 10px;
     background-color: #f0f0f0;
 }
+
+progress::-webkit-progress-bar {
+    border-radius: 12px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 12px;
+}
+
+.bmi-progress-underweight {
+    background-color: #99ccff;
+}
+
+.bmi-progress-normal {
+    background-color: #66cc66;
+}
+
+.bmi-progress-overweight {
+    background-color: #ffcc00;
+}
+
+.bmi-progress-obese {
+    background-color: #ff3333;
+}
