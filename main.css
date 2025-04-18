@@ -132,3 +132,11 @@ progress::-webkit-progress-bar {
 progress::-webkit-progress-value {
     border-radius: 12px;
 }
+
+.bmi-progress-underweight {
+    background-color: #99ccff;
+}
+
+.bmi-progress-normal {
+    background-color: #66cc66;
+}
