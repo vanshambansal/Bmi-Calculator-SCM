@@ -124,3 +124,11 @@ progress {
     margin-top: 10px;
     background-color: #f0f0f0;
 }
+
+progress::-webkit-progress-bar {
+    border-radius: 12px;
+}
+
+progress::-webkit-progress-value {
+    border-radius: 12px;
+}
