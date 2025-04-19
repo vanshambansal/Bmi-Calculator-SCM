@@ -69,3 +69,27 @@ function calculateBMI() {
     // Display BMI meaning
     displayBMIMeaning(bmi);
 
+    
+    // Update the progress bar and its color based on BMI range
+    const progressBar = document.getElementById("bmiProgress");
+
+    let progressValue = 0;
+    let progressClass = '';
+
+    if (bmi < 18.5) {
+        progressValue = 25;
+        progressClass = "bmi-progress-underweight";
+        document.getElementById("bmi-meaning").innerText = "You are underweight.";
+    } else if (bmi >= 18.5 && bmi < 24.9) {
+        progressValue = 50;
+        progressClass = "bmi-progress-normal";
+        document.getElementById("bmi-meaning").innerText = "Your BMI is normal.";
+    } else if (bmi >= 25 && bmi < 29.9) {
+        progressValue = 75;
+        progressClass = "bmi-progress-overweight";
+        document.getElementById("bmi-meaning").innerText = "You are overweight.";
+    } else {
+        progressValue = 100;
+        progressClass = "bmi-progress-obese";
+        document.getElementById("bmi-meaning").innerText = "You are obese.";
+    }
