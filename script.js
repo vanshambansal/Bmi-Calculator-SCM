@@ -102,4 +102,8 @@ function calculateBMI() {
         });
         progressBar.className = `progress-bar ${progressClass}`;
     }, 500); // 1000ms = 1 second
+     // Show the result section
+     document.getElementById("result-section").style.display = "block";
+     document.getElementById("result-section").scrollIntoView({ behavior: "smooth" });
+ 
 }
