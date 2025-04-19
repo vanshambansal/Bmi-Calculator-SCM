@@ -50,3 +50,22 @@ document.getElementById("bmi-form").addEventListener("submit", function (e) {
     
 });
 
+// Function to calculate BMI
+function calculateBMI() {
+    const weight = parseFloat(document.getElementById("weight").value);
+    const height = parseFloat(document.getElementById("height").value);
+    const unit = document.getElementById("weight-unit").value;
+    let bmi;
+
+    if (unit === "kg") {
+        bmi = weight / (height * height);
+    } else {
+        bmi = (weight / (height * height)) * 703;
+    }
+
+    // Update the BMI result display
+    document.getElementById("bmiValue").innerText = bmi.toFixed(1);
+
+    // Display BMI meaning
+    displayBMIMeaning(bmi);
+
