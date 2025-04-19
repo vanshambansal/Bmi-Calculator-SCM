@@ -161,3 +161,15 @@ function displayBMIMeaning(bmi) {
     document.getElementById("bmi-means").innerText = bmimeans;
 
 }
+
+
+
+const inputFields = document.querySelectorAll("#weight, #height");
+inputFields.forEach(input => {
+    input.addEventListener("focus", () => {
+        gsap.to(input, { duration: 0.2, scale: 1.05, boxShadow: "0 0 10px rgba(0, 123, 255, 0.8)" });
+    });
+    input.addEventListener("blur", () => {
+        gsap.to(input, { duration: 0.2, scale: 1, boxShadow: "none" });
+    });
+});
