@@ -93,3 +93,4 @@ function calculateBMI() {
         progressClass = "bmi-progress-obese";
         document.getElementById("bmi-meaning").innerText = "You are obese.";
     }
+}
