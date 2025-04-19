@@ -93,4 +93,13 @@ function calculateBMI() {
         progressClass = "bmi-progress-obese";
         document.getElementById("bmi-meaning").innerText = "You are obese.";
     }
+    // Delay progress animation by 1 second
+    setTimeout(() => {
+        gsap.to(progressBar, {
+            duration: 1,
+            value: progressValue,
+            ease: "power2.out",
+        });
+        progressBar.className = `progress-bar ${progressClass}`;
+    }, 500); // 1000ms = 1 second
 }
