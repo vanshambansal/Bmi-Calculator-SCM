@@ -93,6 +93,7 @@ function calculateBMI() {
         progressClass = "bmi-progress-obese";
         document.getElementById("bmi-meaning").innerText = "You are obese.";
     }
+
     // Delay progress animation by 1 second
     setTimeout(() => {
         gsap.to(progressBar, {
@@ -102,8 +103,17 @@ function calculateBMI() {
         });
         progressBar.className = `progress-bar ${progressClass}`;
     }, 500); // 1000ms = 1 second
+
      // Show the result section
      document.getElementById("result-section").style.display = "block";
      document.getElementById("result-section").scrollIntoView({ behavior: "smooth" });
- 
+    
+     // Show the quiz entry button
+    const bmiCategory = getBMICategory(bmi);
+    document.getElementById("quiz-entry").onclick = function () {
+        // Open the quiz page in a new tab or window
+        window.open(`quiz.html?category=${bmiCategory}`, '_blank');
+    };
+    document.getElementById("quiz-entry").style.display = "block";
+
 }
