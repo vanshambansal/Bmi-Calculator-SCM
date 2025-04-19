@@ -153,4 +153,11 @@ function displayBMIMeaning(bmi) {
         bmimeans = "A BMI of 40 or above falls into the Class 3 (severe) obesity category. This can significantly impact your health. It’s important to get professional medical advice to safely reduce your BMI and improve your health.";
         routine = "Opt for low-impact activities like water exercises or chair workouts to avoid strain on joints. Focus on gradually increasing activity levels. Begin with 10-20 minutes of exercise daily, progressing as your stamina builds.";
     }
+
+    document.getElementById("bmi-meaning-card").style.display = "block";
+    document.getElementById("routine-card").style.display = "block";
+    document.getElementById("bmi-meaning").innerText = meaning;
+    document.getElementById("routine-description").innerText = routine;
+    document.getElementById("bmi-means").innerText = bmimeans;
+
 }
