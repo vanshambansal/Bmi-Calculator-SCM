@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health Quiz</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <!-- Simple Header -->
+    <header class="quiz-header">
+      <h1>Health Quiz Based on Your BMI</h1>
+    </header>
+
+    <div class="quiz-container">
+        <!-- Quiz Box -->
+        <div id="quiz-box" class="quiz-box">
+          <div id="question" class="question">Loading question...</div>
+          <div id="options" class="options"></div>
+          <button id="next-btn" class="btn-next" disabled>Next</button>
+        </div>
+
+    <!-- Quiz Result Section -->
+    <div id="quiz-result" class="quiz-result hidden">
+        <h2>Your Score: <span id="score"></span></h2>
+        <p id="result-message"></p>
+        <a href="index.html" class="btn-main">Back to BMI Calculator</a>
+      </div>
+    </div>
+
+    <!-- Simple Footer -->
+  <footer class="quiz-footer">
+    <p>&copy; 2025 BMI Calculator</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
