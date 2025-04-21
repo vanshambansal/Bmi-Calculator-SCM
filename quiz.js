@@ -49,5 +49,24 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "underweight"
         },
+        {
+            question: "What should underweight individuals do before starting a new diet or routine?",
+            options: [
+                "Copy a friend’s diet",
+                "Ignore professional advice",
+                "Consult a healthcare professional",
+                "Try extreme weight gain supplements"
+            ],
+            correct: 2,
+            bmiRange: "underweight"
+        },
     ];
+
+
+
+
+
+
+
+    
 });
