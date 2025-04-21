@@ -11,3 +11,16 @@ body {
     min-height: 100vh;
     color: #333;
 }
+
+/* Main Quiz Section */
+.quiz-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
