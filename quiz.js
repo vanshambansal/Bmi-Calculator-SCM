@@ -38,5 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 1,
             bmiRange: "underweight"
         },
+        {
+            question: "Which of the following can be a sign of being underweight?",
+            options: [
+                "High energy levels",
+                "Strong immune system",
+                "Fatigue and frequent illness",
+                "None of the above"
+            ],
+            correct: 2,
+            bmiRange: "underweight"
+        },
     ];
 });
