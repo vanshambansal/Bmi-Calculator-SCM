@@ -16,5 +16,27 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 1,
             bmiRange: "underweight"
         },
+        {
+            question: "Why is strength training beneficial for underweight individuals?",
+            options: [
+                "It helps burn extra calories",
+                "It reduces muscle mass",
+                "It helps build healthy muscle mass",
+                "It’s not recommended at all"
+            ],
+            correct: 2,
+            bmiRange: "underweight"
+        },
+        {
+            question: "What nutrient is essential for muscle building and healthy weight gain?",
+            options: [
+                "Fiber",
+                "Protein",
+                "Caffeine",
+                "Sodium"
+            ],
+            correct: 1,
+            bmiRange: "underweight"
+        },
     ];
 });
