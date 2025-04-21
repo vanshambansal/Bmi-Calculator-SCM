@@ -1,0 +1,35 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Main Quiz Section */
+.quiz-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}

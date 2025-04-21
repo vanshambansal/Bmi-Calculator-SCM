@@ -74,19 +74,23 @@ body {
 .benefits-box {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap; 
+    gap: 5px;
     margin: 10px 0;
 }
 
 .benefit-item {
+    flex: 1 1 200px; /* Allows items to shrink and grow */
+    max-width: 300px; /* Prevents from getting too wide */
     background-color: #c4f2fb; 
     padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: #087990; 
 }
-/* General Styling for the BMI Result Section */
 
+
+/* General Styling for the BMI Result Section */
 .card {
     background-color: #ffffff;
     border-radius: 10px;
