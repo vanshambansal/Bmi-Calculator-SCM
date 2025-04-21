@@ -33,3 +33,12 @@ body {
     flex-wrap: wrap;
     margin-top: 1rem;
 }
+
+.question {
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    margin-bottom: 1.5rem;
+}
+
+.options button:hover {
+    background-color: #0056b3;
+}
