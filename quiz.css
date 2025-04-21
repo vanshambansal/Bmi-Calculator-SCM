@@ -39,6 +39,20 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.options button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
 .options button:hover {
     background-color: #0056b3;
 }
