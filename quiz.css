@@ -24,3 +24,12 @@ body {
     margin-bottom: 100px;
     text-align: center;
 }
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
