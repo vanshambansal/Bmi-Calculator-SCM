@@ -85,5 +85,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    function displayQuestion(index) {
+        const q = filteredQuestions[index];
+        const questionElement = document.getElementById("question");
+        const optionsElement = document.getElementById("options");
+        const nextBtn = document.getElementById("next-btn");
+    
+        questionElement.innerText = q.question;
+        optionsElement.innerHTML = "";
+        nextBtn.disabled = true;
+    }
     
 });
