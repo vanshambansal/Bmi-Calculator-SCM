@@ -84,6 +84,17 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 1,
             bmiRange: "normal"
         },
+        {
+            question: "Which of these helps in tracking and maintaining a healthy weight?",
+            options: [
+                "BMI, balanced meals, and consistent routines",
+                "Weighing yourself daily only",
+                "Completely cutting out carbs",
+                "Sleeping less and working out more"
+            ],
+            correct: 0,
+            bmiRange: "normal"
+        },
     ];
 
 
