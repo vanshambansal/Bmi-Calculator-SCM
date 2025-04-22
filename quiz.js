@@ -106,6 +106,19 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 0,
             bmiRange: "normal"
         },
+        {
+            question: "What is a sign of overall healthy lifestyle maintenance?",
+            options: [
+                "Constant dieting",
+                "Feeling energized, sleeping well, and being active",
+                "Avoiding all social events",
+                "Following fad diets"
+            ],
+            correct: 1,
+            bmiRange: "normal"
+        },
+
+
     ];
 
 
