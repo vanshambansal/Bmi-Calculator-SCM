@@ -219,7 +219,7 @@ document.getElementById("next-btn").addEventListener("click", () => {
     if (currentQuestionIndex < filteredQuestions.length - 1) {
         currentQuestionIndex++;
         displayQuestion(currentQuestionIndex);
-        
+
     } 
     else {
         displayResults();
@@ -227,3 +227,18 @@ document.getElementById("next-btn").addEventListener("click", () => {
     }
 }
 );
+
+document.querySelector(".btn-main").addEventListener("click", () => {
+
+    window.close();
+
+});
+
+// 🔁 Restart button logic
+document.getElementById("restart-btn").addEventListener("click", () => {
+
+    window.location.reload();
+    
+});
+
+displayQuestion(currentQuestionIndex);
