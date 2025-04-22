@@ -60,6 +60,65 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "underweight"
         },
+        
+        // ✅ Questions for Healthy Weight category
+        {
+            question: "What is an ideal way to maintain a healthy weight?",
+            options: [
+                "Skip meals occasionally",
+                "Consume only fruits",
+                "Balance between diet and regular exercise",
+                "Avoid all fats completely"
+            ],
+            correct: 2,
+            bmiRange: "normal"
+        },
+        {
+            question: "How often should you engage in moderate physical activity weekly?",
+            options: [
+                "30 minutes every day",
+                "150 minutes per week",
+                "Once a week",
+                "Every few months"
+            ],
+            correct: 1,
+            bmiRange: "normal"
+        },
+        {
+            question: "Which of these helps in tracking and maintaining a healthy weight?",
+            options: [
+                "BMI, balanced meals, and consistent routines",
+                "Weighing yourself daily only",
+                "Completely cutting out carbs",
+                "Sleeping less and working out more"
+            ],
+            correct: 0,
+            bmiRange: "normal"
+        },
+        {
+            question: "Why is strength training important even for healthy weight individuals?",
+            options: [
+                "To improve muscle tone and metabolic health",
+                "To lose more fat quickly",
+                "It’s not necessary",
+                "Only athletes need it"
+            ],
+            correct: 0,
+            bmiRange: "normal"
+        },
+        {
+            question: "What is a sign of overall healthy lifestyle maintenance?",
+            options: [
+                "Constant dieting",
+                "Feeling energized, sleeping well, and being active",
+                "Avoiding all social events",
+                "Following fad diets"
+            ],
+            correct: 1,
+            bmiRange: "normal"
+        },
+
+
     ];
 
 
