@@ -56,3 +56,49 @@ body {
 .options button:hover {
     background-color: #0056b3;
 }
+
+.btn-next {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.2rem);
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-next:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.quiz-result {
+    margin-top: 2rem;
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+}
+
+.quiz-result p {
+    margin-top: 1rem;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+}
+
+.btn-main,
+#restart-btn {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0.2rem auto;
+    background-color: #007bff;
+    padding: 0.6rem 1.2rem;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    text-align: center;
+}
+
+.btn-main:hover,
+#restart-btn:hover {
+    background-color: #0056b3;
+}
