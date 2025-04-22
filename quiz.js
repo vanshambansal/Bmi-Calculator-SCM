@@ -95,6 +95,17 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 0,
             bmiRange: "normal"
         },
+        {
+            question: "Why is strength training important even for healthy weight individuals?",
+            options: [
+                "To improve muscle tone and metabolic health",
+                "To lose more fat quickly",
+                "It’s not necessary",
+                "Only athletes need it"
+            ],
+            correct: 0,
+            bmiRange: "normal"
+        },
     ];
 
 
