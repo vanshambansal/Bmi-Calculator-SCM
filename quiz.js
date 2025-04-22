@@ -60,6 +60,20 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "underweight"
         },
+        
+        // ✅ Questions for Healthy Weight category
+        {
+            question: "What is an ideal way to maintain a healthy weight?",
+            options: [
+                "Skip meals occasionally",
+                "Consume only fruits",
+                "Balance between diet and regular exercise",
+                "Avoid all fats completely"
+            ],
+            correct: 2,
+            bmiRange: "normal"
+        },
+        
     ];
 
 
