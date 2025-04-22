@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "underweight"
         },
-        
+
         // ✅ Questions for Healthy Weight category
         {
             question: "What is an ideal way to maintain a healthy weight?",
@@ -171,4 +171,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
     
+    function checkAnswer(selected, correct) {
+        if (selected === correct) score++;
+    }
+
+    function disableOptions() {
+        const buttons = document.querySelectorAll(".option");
+        buttons.forEach(btn => btn.disabled = true);
+    }
+
 });
