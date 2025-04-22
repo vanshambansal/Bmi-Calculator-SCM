@@ -90,10 +90,26 @@ document.addEventListener("DOMContentLoaded", () => {
         const questionElement = document.getElementById("question");
         const optionsElement = document.getElementById("options");
         const nextBtn = document.getElementById("next-btn");
-    
+
         questionElement.innerText = q.question;
         optionsElement.innerHTML = "";
         nextBtn.disabled = true;
+
+        const shuffledOptions = q.options.map((opt, i) => ({ opt, index: i }));
+        shuffle(shuffledOptions);
+
+        shuffledOptions.forEach(({ opt, index }) => {
+            const btn = document.createElement("button");
+            btn.innerText = opt;
+            btn.classList.add("option");
+            btn.addEventListener("click", () => {
+                checkAnswer(index, q.correct);
+                disableOptions();
+                nextBtn.disabled = false;
+                highlightAnswers(index, q.correct);
+            });
+            optionsElement.appendChild(btn);
+        });
     }
     
 });
