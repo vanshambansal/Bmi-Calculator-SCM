@@ -194,3 +194,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 });
+
+
+function displayResults() {
+
+    const quizBox = document.getElementById("quiz-box");
+    const quizResult = document.getElementById("quiz-result");
+    const scoreElement = document.getElementById("score");
+    const resultMessage = document.getElementById("result-message");
+    const restartBtn = document.getElementById("restart-btn");
+
+    quizBox.style.display = "none";
+    quizResult.style.display = "block";
+
+    scoreElement.innerText = `${score}/${filteredQuestions.length}`;
+    resultMessage.innerText = score >= 5 ? "🔥 Excellent! You're health smart!" : score >= 3 ? "👍 Not bad! Keep learning." : "💡 Keep going! You can improve.";
+
+    restartBtn.style.display = "inline-block";
+    
+}
