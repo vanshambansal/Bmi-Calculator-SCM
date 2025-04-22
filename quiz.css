@@ -25,6 +25,7 @@ body {
     text-align: center;
 }
 
+
 .result-buttons {
     display: flex;
     justify-content: center;
@@ -34,10 +35,12 @@ body {
     margin-top: 1rem;
 }
 
+
 .question {
     font-size: clamp(1.1rem, 2.5vw, 1.3rem);
     margin-bottom: 1.5rem;
 }
+
 
 .options button {
     display: block;
@@ -53,9 +56,11 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .options button:hover {
     background-color: #0056b3;
 }
+
 
 .btn-next {
     margin-top: 1rem;
@@ -68,20 +73,24 @@ body {
     cursor: pointer;
 }
 
+
 .btn-next:disabled {
     background-color: #ccc;
     cursor: not-allowed;
 }
+
 
 .quiz-result {
     margin-top: 2rem;
     font-size: clamp(1rem, 2.5vw, 1.2rem);
 }
 
+
 .quiz-result p {
     margin-top: 1rem;
     font-size: clamp(1rem, 2.5vw, 1.1rem);
 }
+
 
 .btn-main,
 #restart-btn {
@@ -98,7 +107,30 @@ body {
     text-align: center;
 }
 
+
 .btn-main:hover,
 #restart-btn:hover {
     background-color: #0056b3;
+}
+
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+
+/* Responsive Tweaks */
+@media (max-width: 500px) {
+    .quiz-container {
+        padding: 1rem;
+    }
+
+    .options button {
+        padding: 0.6rem;
+    }
+
+    .btn-next {
+        padding: 0.6rem 1rem;
+    }
 }
