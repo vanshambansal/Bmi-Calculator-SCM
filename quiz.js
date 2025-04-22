@@ -211,5 +211,19 @@ function displayResults() {
     resultMessage.innerText = score >= 5 ? "🔥 Excellent! You're health smart!" : score >= 3 ? "👍 Not bad! Keep learning." : "💡 Keep going! You can improve.";
 
     restartBtn.style.display = "inline-block";
-    
+
 }
+
+document.getElementById("next-btn").addEventListener("click", () => {
+
+    if (currentQuestionIndex < filteredQuestions.length - 1) {
+        currentQuestionIndex++;
+        displayQuestion(currentQuestionIndex);
+        
+    } 
+    else {
+        displayResults();
+
+    }
+}
+);
