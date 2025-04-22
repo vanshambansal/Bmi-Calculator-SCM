@@ -180,4 +180,17 @@ document.addEventListener("DOMContentLoaded", () => {
         buttons.forEach(btn => btn.disabled = true);
     }
 
+    function highlightAnswers(selected, correct) {
+        const buttons = document.querySelectorAll(".option");
+        buttons.forEach((btn, i) => {
+            const originalIndex = filteredQuestions[currentQuestionIndex].options.indexOf(btn.innerText);
+            if (originalIndex === correct) {
+                btn.style.backgroundColor = "green";
+            } else if (originalIndex === selected) {
+                btn.style.backgroundColor = "red";
+            }
+        });
+    }
+
+
 });
