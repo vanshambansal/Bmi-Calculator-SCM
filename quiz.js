@@ -74,7 +74,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const categoryQuestions = questions.filter(q => q.bmiRange === bmiCategory);
     const generalQuestions = questions.filter(q => q.bmiRange === "all").slice(0, 2);
 
+    shuffle(categoryQuestions);
+    shuffle(generalQuestions);
 
+    const filteredQuestions = [...categoryQuestions.slice(0, 5), ...generalQuestions];
+    shuffle(filteredQuestions);
+
+    let currentQuestionIndex = 0;
+    let score = 0;
 
 
 
