@@ -63,10 +63,37 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
 
+    // 🔀 Shuffle helper function
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+    }
+
+    const categoryQuestions = questions.filter(q => q.bmiRange === bmiCategory);
+    const generalQuestions = questions.filter(q => q.bmiRange === "all").slice(0, 2);
+
+    shuffle(categoryQuestions);
+    shuffle(generalQuestions);
+
+    const filteredQuestions = [...categoryQuestions.slice(0, 5), ...generalQuestions];
+    shuffle(filteredQuestions);
+
+    let currentQuestionIndex = 0;
+    let score = 0;
 
 
 
-
-
+    function displayQuestion(index) {
+        const q = filteredQuestions[index];
+        const questionElement = document.getElementById("question");
+        const optionsElement = document.getElementById("options");
+        const nextBtn = document.getElementById("next-btn");
+    
+        questionElement.innerText = q.question;
+        optionsElement.innerHTML = "";
+        nextBtn.disabled = true;
+    }
     
 });
