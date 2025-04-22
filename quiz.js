@@ -73,7 +73,17 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "normal"
         },
-        
+        {
+            question: "How often should you engage in moderate physical activity weekly?",
+            options: [
+                "30 minutes every day",
+                "150 minutes per week",
+                "Once a week",
+                "Every few months"
+            ],
+            correct: 1,
+            bmiRange: "normal"
+        },
     ];
 
 
