@@ -147,7 +147,29 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "overweight"
         },
-
+        {
+            question: "What kind of diet is advisable for overweight individuals?",
+            options: [
+                "Very low-carb, no fats at all",
+                "Balanced meals with vegetables, protein, and whole grains",
+                "Only fruit-based smoothies",
+                "Skip breakfast and lunch"
+            ],
+            correct: 1,
+            bmiRange: "overweight"
+        },
+        {
+            question: "What does regular physical activity help with?",
+            options: [
+                "Just weight loss",
+                "Only muscle gain",
+                "Improves metabolism, energy, and helps with weight loss",
+                "Nothing, only diet works"
+            ],
+            correct: 2,
+            bmiRange: "overweight"
+        },
+        
     ];
 
 
