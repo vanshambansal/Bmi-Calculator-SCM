@@ -181,6 +181,18 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "overweight"
         },
 
+        // ✅ Shared Questions for All categories
+        {
+            question: "What is the most important factor for maintaining a healthy weight?",
+            options: [
+                "Balanced diet combined with regular exercise",
+                "Only dieting and skipping meals",
+                "Avoiding carbs completely",
+                "Never eating after 6 PM"
+            ],
+            correct: 0,
+            bmiRange: "all"
+        }
         
 
         
