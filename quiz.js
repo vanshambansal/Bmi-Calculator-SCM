@@ -169,6 +169,20 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 2,
             bmiRange: "overweight"
         },
+        {
+            question: "Why is gradual weight loss preferred over rapid methods?",
+            options: [
+                "Rapid loss is more impressive",
+                "Gradual weight loss is safer and more sustainable",
+                "Faster results make you more motivated",
+                "Slow changes have no benefit"
+            ],
+            correct: 1,
+            bmiRange: "overweight"
+        },
+
+        
+
         
     ];
 
