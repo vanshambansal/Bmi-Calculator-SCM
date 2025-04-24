@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "underweight"
         },
 
+
+
+
         // ✅ Questions for Healthy Weight category
         {
             question: "What is an ideal way to maintain a healthy weight?",
@@ -118,6 +121,32 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "normal"
         },
 
+
+
+
+        // ✅ Questions for Overweight category
+        {
+            question: "What is the first recommended step for someone who is overweight?",
+            options: [
+                "Consult a healthcare provider",
+                "Skip dinner daily",
+                "Only drink water for a week",
+                "Take weight loss pills"
+            ],
+            correct: 0,
+            bmiRange: "overweight"
+        },
+        {
+            question: "Which type of exercise is best to start with when overweight?",
+            options: [
+                "High-intensity sprinting",
+                "Heavy weightlifting only",
+                "Low-impact cardio like walking or swimming",
+                "No exercise, just diet"
+            ],
+            correct: 2,
+            bmiRange: "overweight"
+        },
 
     ];
 
