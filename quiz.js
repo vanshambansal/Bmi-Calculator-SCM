@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "underweight"
         },
 
+
+
+
         // ✅ Questions for Healthy Weight category
         {
             question: "What is an ideal way to maintain a healthy weight?",
@@ -119,6 +122,68 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
 
+
+
+        // ✅ Questions for Overweight category
+        {
+            question: "What is the first recommended step for someone who is overweight?",
+            options: [
+                "Consult a healthcare provider",
+                "Skip dinner daily",
+                "Only drink water for a week",
+                "Take weight loss pills"
+            ],
+            correct: 0,
+            bmiRange: "overweight"
+        },
+        {
+            question: "Which type of exercise is best to start with when overweight?",
+            options: [
+                "High-intensity sprinting",
+                "Heavy weightlifting only",
+                "Low-impact cardio like walking or swimming",
+                "No exercise, just diet"
+            ],
+            correct: 2,
+            bmiRange: "overweight"
+        },
+        {
+            question: "What kind of diet is advisable for overweight individuals?",
+            options: [
+                "Very low-carb, no fats at all",
+                "Balanced meals with vegetables, protein, and whole grains",
+                "Only fruit-based smoothies",
+                "Skip breakfast and lunch"
+            ],
+            correct: 1,
+            bmiRange: "overweight"
+        },
+        {
+            question: "What does regular physical activity help with?",
+            options: [
+                "Just weight loss",
+                "Only muscle gain",
+                "Improves metabolism, energy, and helps with weight loss",
+                "Nothing, only diet works"
+            ],
+            correct: 2,
+            bmiRange: "overweight"
+        },
+        {
+            question: "Why is gradual weight loss preferred over rapid methods?",
+            options: [
+                "Rapid loss is more impressive",
+                "Gradual weight loss is safer and more sustainable",
+                "Faster results make you more motivated",
+                "Slow changes have no benefit"
+            ],
+            correct: 1,
+            bmiRange: "overweight"
+        },
+
+        
+
+        
     ];
 
 
