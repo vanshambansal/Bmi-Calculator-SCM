@@ -192,6 +192,18 @@ document.addEventListener("DOMContentLoaded", () => {
             ],
             correct: 0,
             bmiRange: "all"
+        },
+
+        {
+            question: "Which of the following is a key benefit of regular physical activity?",
+            options: [
+                "Improved metabolism, better heart health, and weight management",
+                "Only helps in losing weight quickly",
+                "It has no impact on mental health",
+                "It should only be done in a gym setting"
+            ],
+            correct: 0,
+            bmiRange: "all"
         }
         
 
