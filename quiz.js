@@ -181,6 +181,30 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "overweight"
         },
 
+        // ✅ Shared Questions for All categories
+        {
+            question: "What is the most important factor for maintaining a healthy weight?",
+            options: [
+                "Balanced diet combined with regular exercise",
+                "Only dieting and skipping meals",
+                "Avoiding carbs completely",
+                "Never eating after 6 PM"
+            ],
+            correct: 0,
+            bmiRange: "all"
+        },
+
+        {
+            question: "Which of the following is a key benefit of regular physical activity?",
+            options: [
+                "Improved metabolism, better heart health, and weight management",
+                "Only helps in losing weight quickly",
+                "It has no impact on mental health",
+                "It should only be done in a gym setting"
+            ],
+            correct: 0,
+            bmiRange: "all"
+        }
         
 
         
