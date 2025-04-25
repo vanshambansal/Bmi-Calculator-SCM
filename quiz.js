@@ -181,6 +181,64 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "overweight"
         },
 
+          // ✅ Questions for Obese (Class I, II, III) category
+          {
+            question: "What is the first step someone with obesity should take to improve health?",
+            options: [
+                "Consult a doctor for a personalized plan",
+                "Start an extreme diet immediately",
+                "Stop eating completely for a week",
+                "Only drink liquids for a month"
+            ],
+            correct: 0,
+            bmiRange: "obese"
+        },
+        {
+            question: "Which exercise type is generally recommended for obese individuals?",
+            options: [
+                "High-impact sports like running",
+                "Low-impact exercises like walking, cycling, or swimming",
+                "Only strength training with heavy weights",
+                "Extreme cardio sessions every day"
+            ],
+            correct: 1,
+            bmiRange: "obese"
+        },
+        {
+            question: "Why should obese individuals avoid rapid weight loss methods?",
+            options: [
+                "It can cause health issues like nutritional deficiencies",
+                "It’s faster and more rewarding",
+                "It makes your metabolism faster",
+                "It’s the only way to lose weight"
+            ],
+            correct: 0,
+            bmiRange: "obese"
+        },
+        {
+            question: "Which lifestyle change can help reduce the risk of obesity-related health complications?",
+            options: [
+                "Drinking high-calorie sugary drinks",
+                "Regular physical activity and balanced meals",
+                "Skipping meals to reduce calorie intake",
+                "Avoiding all carbs and fats"
+            ],
+            correct: 1,
+            bmiRange: "obese"
+        },
+        {
+            question: "What is the most important factor in maintaining long-term weight loss for obese individuals?",
+            options: [
+                "Quick weight loss at any cost",
+                "Sustainable, long-term lifestyle changes in diet and exercise",
+                "Constantly following the latest diet trends",
+                "Avoiding all physical activities"
+            ],
+            correct: 1,
+            bmiRange: "obese"
+        },
+
+
         // ✅ Shared Questions for All categories
         {
             question: "What is the most important factor for maintaining a healthy weight?",
