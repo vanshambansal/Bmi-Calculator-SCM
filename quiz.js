@@ -181,6 +181,20 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "overweight"
         },
 
+          // ✅ Questions for Obese (Class I, II, III) category
+          {
+            question: "What is the first step someone with obesity should take to improve health?",
+            options: [
+                "Consult a doctor for a personalized plan",
+                "Start an extreme diet immediately",
+                "Stop eating completely for a week",
+                "Only drink liquids for a month"
+            ],
+            correct: 0,
+            bmiRange: "obese"
+        },
+
+        
         // ✅ Shared Questions for All categories
         {
             question: "What is the most important factor for maintaining a healthy weight?",
