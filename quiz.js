@@ -215,6 +215,17 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 0,
             bmiRange: "obese"
         },
+        {
+            question: "Which lifestyle change can help reduce the risk of obesity-related health complications?",
+            options: [
+                "Drinking high-calorie sugary drinks",
+                "Regular physical activity and balanced meals",
+                "Skipping meals to reduce calorie intake",
+                "Avoiding all carbs and fats"
+            ],
+            correct: 1,
+            bmiRange: "obese"
+        },
 
 
         // ✅ Shared Questions for All categories
