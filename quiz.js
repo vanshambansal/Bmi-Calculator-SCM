@@ -226,6 +226,17 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 1,
             bmiRange: "obese"
         },
+        {
+            question: "What is the most important factor in maintaining long-term weight loss for obese individuals?",
+            options: [
+                "Quick weight loss at any cost",
+                "Sustainable, long-term lifestyle changes in diet and exercise",
+                "Constantly following the latest diet trends",
+                "Avoiding all physical activities"
+            ],
+            correct: 1,
+            bmiRange: "obese"
+        },
 
 
         // ✅ Shared Questions for All categories
