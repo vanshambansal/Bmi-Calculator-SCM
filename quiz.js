@@ -204,6 +204,17 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 1,
             bmiRange: "obese"
         },
+        {
+            question: "Why should obese individuals avoid rapid weight loss methods?",
+            options: [
+                "It can cause health issues like nutritional deficiencies",
+                "It’s faster and more rewarding",
+                "It makes your metabolism faster",
+                "It’s the only way to lose weight"
+            ],
+            correct: 0,
+            bmiRange: "obese"
+        },
 
 
         // ✅ Shared Questions for All categories
