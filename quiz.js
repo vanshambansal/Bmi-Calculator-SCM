@@ -193,8 +193,19 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 0,
             bmiRange: "obese"
         },
+        {
+            question: "Which exercise type is generally recommended for obese individuals?",
+            options: [
+                "High-impact sports like running",
+                "Low-impact exercises like walking, cycling, or swimming",
+                "Only strength training with heavy weights",
+                "Extreme cardio sessions every day"
+            ],
+            correct: 1,
+            bmiRange: "obese"
+        },
 
-        
+
         // ✅ Shared Questions for All categories
         {
             question: "What is the most important factor for maintaining a healthy weight?",
