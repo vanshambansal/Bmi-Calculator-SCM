@@ -181,8 +181,8 @@ document.addEventListener("DOMContentLoaded", () => {
             bmiRange: "overweight"
         },
 
-          // ✅ Questions for Obese (Class I, II, III) category
-          {
+        // ✅ Questions for Obese (Class I, II, III) category
+        {
             question: "What is the first step someone with obesity should take to improve health?",
             options: [
                 "Consult a doctor for a personalized plan",
@@ -263,9 +263,9 @@ document.addEventListener("DOMContentLoaded", () => {
             correct: 0,
             bmiRange: "all"
         }
-        
 
-        
+
+
     ];
 
 
@@ -317,7 +317,7 @@ document.addEventListener("DOMContentLoaded", () => {
             optionsElement.appendChild(btn);
         });
     }
-    
+
     function checkAnswer(selected, correct) {
         if (selected === correct) score++;
     }
@@ -340,52 +340,52 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-});
 
+    function displayResults() {
 
-function displayResults() {
+        const quizBox = document.getElementById("quiz-box");
+        const quizResult = document.getElementById("quiz-result");
+        const scoreElement = document.getElementById("score");
+        const resultMessage = document.getElementById("result-message");
+        const restartBtn = document.getElementById("restart-btn");
 
-    const quizBox = document.getElementById("quiz-box");
-    const quizResult = document.getElementById("quiz-result");
-    const scoreElement = document.getElementById("score");
-    const resultMessage = document.getElementById("result-message");
-    const restartBtn = document.getElementById("restart-btn");
+        quizBox.style.display = "none";
+        quizResult.style.display = "block";
 
-    quizBox.style.display = "none";
-    quizResult.style.display = "block";
+        scoreElement.innerText = `${score}/${filteredQuestions.length}`;
+        resultMessage.innerText = score >= 5 ? "🔥 Excellent! You're health smart!" : score >= 3 ? "👍 Not bad! Keep learning." : "💡 Keep going! You can improve.";
 
-    scoreElement.innerText = `${score}/${filteredQuestions.length}`;
-    resultMessage.innerText = score >= 5 ? "🔥 Excellent! You're health smart!" : score >= 3 ? "👍 Not bad! Keep learning." : "💡 Keep going! You can improve.";
-
-    restartBtn.style.display = "inline-block";
-
-}
-
-document.getElementById("next-btn").addEventListener("click", () => {
-
-    if (currentQuestionIndex < filteredQuestions.length - 1) {
-        currentQuestionIndex++;
-        displayQuestion(currentQuestionIndex);
-
-    } 
-    else {
-        displayResults();
+        restartBtn.style.display = "inline-block";
 
     }
-}
-);
 
-document.querySelector(".btn-main").addEventListener("click", () => {
+    document.getElementById("next-btn").addEventListener("click", () => {
 
-    window.close();
+        if (currentQuestionIndex < filteredQuestions.length - 1) {
+            currentQuestionIndex++;
+            displayQuestion(currentQuestionIndex);
+
+        }
+        else {
+            displayResults();
+
+        }
+    }
+    );
+
+    document.querySelector(".btn-main").addEventListener("click", () => {
+
+        window.close();
+
+    });
+
+    // 🔁 Restart button logic
+    document.getElementById("restart-btn").addEventListener("click", () => {
+
+        window.location.reload();
+
+    });
+
+    displayQuestion(currentQuestionIndex);
 
 });
-
-// 🔁 Restart button logic
-document.getElementById("restart-btn").addEventListener("click", () => {
-
-    window.location.reload();
-    
-});
-
-displayQuestion(currentQuestionIndex);
